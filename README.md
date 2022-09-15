@@ -11,13 +11,13 @@ An ASP.NET Core 6.0 Identity service
 $ dotnet tool install --global dotnet-ef
 $ dotnet tool update --global dotnet-ef
 ```
-
-- Apply database migrations to create the db. From a command line within the _Web.Api.Infrastructure_ project folder use the dotnet CLI to run :
+- Either run the application / `AspNetCoreIdentity.Server` project and the DB will be automatically created or:
+- Apply database migrations to create the db. From a command line within the `AspNetCoreIdentity.Server` project folder use the dotnet CLI to run :
 
 ```
-$ cd Web.Api.Infrastructure
-$ dotnet ef database update --context AppDbContext
-$ dotnet ef database update --context AppIdentityDbContext
+$ cd AspNetCoreIdentity.Server
+$ dotnet ef database update --context PersistedGrantDbContext
+$ dotnet ef database update --context ConfigurationDbContext
 ```
 
 # Visual Studio

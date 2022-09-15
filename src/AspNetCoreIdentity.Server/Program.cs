@@ -24,7 +24,11 @@ try
 }
 catch (Exception ex)
 {
-    Log.Fatal(ex, "Unhandled exception");
+    // The Entity Framework CLI internally starts up IdentityServer for a short time in order to read your database configuration.
+    // After it has read the configuration, it shuts IdentityServer down by throwing a StopTheHostException exception.
+    // We expect this exception to be unhandled and therefore stop IdentityServer. Since it is expected, you do not need to log it as a fatal error. 
+    if (ex.GetType().Name != "StopTheHostException")
+        Log.Fatal(ex, "Unhandled exception");
 }
 finally
 {
