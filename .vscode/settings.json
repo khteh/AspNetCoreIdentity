@@ -1,0 +1,9 @@
+{
+    "explorer.confirmDelete": false,
+    "[csharp]": {},
+    "window.zoomLevel": 0,
+    "dotnet-test-explorer.autoExpandTree": false,
+    "dotnet-test-explorer.autoWatch": false,
+    "dotnet-test-explorer.enableTelemetry": false,
+    "dotnet-test-explorer.testProjectPath": "test/*/*.csproj"
+}
