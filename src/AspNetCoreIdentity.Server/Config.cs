@@ -54,13 +54,18 @@ public static class Config
                 ClientSecrets = { new Secret("openidsecret".Sha512())},
                 AllowedGrantTypes = GrantTypes.Code,
                 // Where to redirect to after login
-                RedirectUris = { "https://localhost:5003/signin-oidc"},
+                RedirectUris = { "https://localhost:5002/signin-oidc"},
                 // Where to redirect to after logout
-                PostLogoutRedirectUris = { "https://localhost:5003/signout-callback-oidc"},
+                PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc"},
+                AllowOfflineAccess = true, // Enable support for refresh tokens
+                // IdentityServer will respond with two tokens
                 AllowedScopes = new List<string>
                 {
+                    // (1) identity token, containing information about the authentication process and session, and
+                    // (2) the access token, allowing access to APIs on behalf of the logged on user
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
+                    "api1", // so that the client will have permission to access it.
                     "email_verification", "phone_verification"
                 }
             }

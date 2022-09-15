@@ -8,7 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
 {
-    options.Authority = "https://localhost:5001";
+    options.Authority = "https://localhost:5000";
     // Audience validation is disabled here because access to the api is modeled with ApiScopes only.
     // By default, no audience will be emitted unless the api is modeled with ApiResources instead. See here for a more in-depth discussion.
     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters { ValidateAudience = false };

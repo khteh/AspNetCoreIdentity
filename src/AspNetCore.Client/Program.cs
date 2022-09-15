@@ -4,7 +4,7 @@ using System.Text.Json;
 
 Console.WriteLine("Hello, World!");
 var client = new HttpClient();
-var discovery = await client.GetDiscoveryDocumentAsync("https://localhost:5001");
+var discovery = await client.GetDiscoveryDocumentAsync("https://localhost:5000");
 if (discovery.IsError)
     Console.WriteLine(discovery.Error);
 // Request a token from IdentityServer
@@ -19,7 +19,7 @@ Console.WriteLine(tokenResponse.IsError ? tokenResponse.Error : $"Successfully r
 // Call the API
 var apiClient = new HttpClient();
 apiClient.SetBearerToken(tokenResponse.AccessToken);
-var response = await apiClient.GetAsync("https://localhost:5002/webapi");
+var response = await apiClient.GetAsync("https://localhost:5001/webapi");
 if (!response.IsSuccessStatusCode)
     Console.WriteLine($"Failed to access webapi endpoint! {response.StatusCode}");
 else

@@ -16,7 +16,7 @@ builder.Services.AddAuthentication(options =>
     .AddCookie("Cookies") // After the call to AddAuthentication, AddCookie adds the handler that can process the local cookie.
     .AddOpenIdConnect("oidc", options => //  AddOpenIdConnect is used to configure the handler that performs the OpenID Connect protocol.
     {
-        options.Authority = "https://localhost:5001"; // where the trusted token service is located.
+        options.Authority = "https://localhost:5000"; // where the trusted token service is located.
         options.ClientId = "openidclient";
         options.ClientSecret = "openidsecret";
         options.ResponseType = "code";
@@ -25,10 +25,12 @@ builder.Services.AddAuthentication(options =>
         options.Scope.Add("profile");
         options.Scope.Add("email_verification");
         options.Scope.Add("phone_verification");
+        options.Scope.Add("api1");
+        options.Scope.Add("offline_access");
         options.ClaimActions.MapJsonKey("email_verified", "email_verified"); // map the new claim returned from the userinfo endpoint onto a user claim.
         options.ClaimActions.MapJsonKey("phone_verified", "phone_verified"); // map the new claim returned from the userinfo endpoint onto a user claim.
         options.GetClaimsFromUserInfoEndpoint = true;
-        options.SaveTokens = true;
+        options.SaveTokens = true; // automatically store the id, access, and refresh tokens in the properties of the authentication cookie.
     });
 // Add services to the container.
 builder.Services.AddRazorPages();
