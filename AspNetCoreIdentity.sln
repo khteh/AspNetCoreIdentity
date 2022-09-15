@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreIdentity.Server",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.WebAPI", "src\AspNetCore.WebAPI\AspNetCore.WebAPI.csproj", "{4AF61F04-95E5-49CB-86D4-34B83A014D95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Client", "src\AspNetCore.Client\AspNetCore.Client.csproj", "{76C348F0-145A-486D-98D8-F2D5BC3BC967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Client", "src\AspNetCore.Client\AspNetCore.Client.csproj", "{76C348F0-145A-486D-98D8-F2D5BC3BC967}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.WebClient", "src\AspNetCore.WebClient\AspNetCore.WebClient.csproj", "{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{76C348F0-145A-486D-98D8-F2D5BC3BC967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C348F0-145A-486D-98D8-F2D5BC3BC967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C348F0-145A-486D-98D8-F2D5BC3BC967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{F341DED2-49C1-4CAF-8FA7-500634A966AE} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 		{4AF61F04-95E5-49CB-86D4-34B83A014D95} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 		{76C348F0-145A-486D-98D8-F2D5BC3BC967} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
+		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E60A10CB-5314-4DE7-86C1-FF230AF3A4BE}
