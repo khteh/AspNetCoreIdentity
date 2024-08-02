@@ -5,13 +5,15 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreIdentity.Server", "src\AspNetCoreIdentity.Server\AspNetCoreIdentity.Server.csproj", "{F341DED2-49C1-4CAF-8FA7-500634A966AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.IdentityServer", "src\AspNetCore.IdentityServer\AspNetCore.IdentityServer.csproj", "{F341DED2-49C1-4CAF-8FA7-500634A966AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.WebAPI", "src\AspNetCore.WebAPI\AspNetCore.WebAPI.csproj", "{4AF61F04-95E5-49CB-86D4-34B83A014D95}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Client", "src\AspNetCore.Client\AspNetCore.Client.csproj", "{76C348F0-145A-486D-98D8-F2D5BC3BC967}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.WebClient", "src\AspNetCore.WebClient\AspNetCore.WebClient.csproj", "{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Identity", "src\AspNetCore.Identity\AspNetCore.Identity.csproj", "{156EE83D-B8BB-4691-A935-23F55BFB4A45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156EE83D-B8BB-4691-A935-23F55BFB4A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156EE83D-B8BB-4691-A935-23F55BFB4A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156EE83D-B8BB-4691-A935-23F55BFB4A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156EE83D-B8BB-4691-A935-23F55BFB4A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{4AF61F04-95E5-49CB-86D4-34B83A014D95} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 		{76C348F0-145A-486D-98D8-F2D5BC3BC967} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 		{7CB884B7-A7F5-4FFD-B885-21D1D164AB6D} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
+		{156EE83D-B8BB-4691-A935-23F55BFB4A45} = {2F20A77B-54E2-41AF-A16E-BD5A2C3B7AA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E60A10CB-5314-4DE7-86C1-FF230AF3A4BE}
