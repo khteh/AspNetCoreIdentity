@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-jammy
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 MAINTAINER Kok How, Teh <funcoolgeek@gmail.com>
 RUN apt update -y
 RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata gnupg2 gnupg gnupg1
@@ -13,6 +13,6 @@ RUN openssl pkcs12 -export -out /tmp/localhost.pfx -inkey server.key -in server.
 #dotnet dev-certs https --clean 
 #dotnet dev-certs https -ep ./localhost.pfx -p AspNetCoreWebApi -v
 #dotnet dev-certs https --trust 
-ADD Web.Api/bin/Release/net6.0/publish/ .
+ADD Web.Api/bin/Release/net8.0/publish/ .
 EXPOSE 443
 ENTRYPOINT ["dotnet", "Web.Api.dll"]

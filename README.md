@@ -1,6 +1,6 @@
 # AspNetCoreIdentity
 
-An ASP.NET Core 6.0 Identity service
+An ASP.NET Core 8.0 Identity service
 
 # Database Setup
 
@@ -11,6 +11,7 @@ An ASP.NET Core 6.0 Identity service
 $ dotnet tool install --global dotnet-ef
 $ dotnet tool update --global dotnet-ef
 ```
+
 - Either run the application / `AspNetCoreIdentity.Server` project and the DB will be automatically created or:
 - Apply database migrations to create the db. From a command line within the `AspNetCoreIdentity.Server` project folder use the dotnet CLI to run :
 
